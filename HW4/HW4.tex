@@ -1,0 +1,50 @@
+\documentclass[journal]{IEEEtran}
+
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{hyperref}  % For clickable links
+\usepackage{fontspec}  % Required for setting fonts in XeLaTeX
+\usepackage{xeCJK}     % For Chinese support in XeLaTeX
+
+% Set fonts
+\setmainfont{Times New Roman}    % Main font
+\setsansfont{Times New Roman}    % Sans-serif font
+\setmonofont{Courier New}        % Monospace font (optional, if needed)
+\setCJKmainfont{SimSun}
+
+% Title and author information
+\title{Less Data, More Knowledge: Building Next Generation Semantic Communication Networks}
+
+\author{Xianzhe~Li,~\IEEEmembership{Student ID:~2022214880} 
+\thanks{Xianzhe Li is with the International College, Chongqing University of Posts and Telecommunications, Chongqing, China (email: 2022214880@stu.cqupt.edu.cn).}
+}
+
+% The paper headers
+\markboth{Academic English Writing , CQUPT, 2024~Fall}%
+{Li: Less Data, More Knowledge: Building Next Generation Semantic Communication Networks}
+
+\begin{document}
+
+% Make title area
+\maketitle
+
+% Abstract section removed as per requirement
+\section{Original Abstract}
+Semantic communication is viewed as a revolutionary paradigm that can potentially transform how we design and operate wireless communication systems. However, despite a recent surge of research activities in this area, remarkably, the research landscape is still limited in at least three ways. First, the very definition of a “semantic communication system” remains ambiguous, and it differs from one work to another. Second, there is a lack of fundamental and scalable frameworks for building next-generation semantic communication networks based on rigorous and well-defined technical foundations. Third, the question of what a “semantic representation” means, and on how this representation can be used to instill meaning, significance, and structure to every information transfer over a wireless network remain unanswered. In this tutorial, we present the first rigorous and holistic vision of an end-to-end semantic communication network that is founded on novel concepts from artificial intelligence (AI), causal reasoning, transfer learning, and minimum description length theory. We first discuss how the design of semantic communication networks requires a move from data-driven and information-driven AI-augmented networks, in which wireless networks remain “tied” to data, towards knowledge-driven and reasoning-driven AI-native networks in which wireless networks are AI-native and can perform versatile logic. We then distinguish the concept of semantic communications from several other approaches that have been conflated with it. For instance, we opine that effectively and efficiently building next-generation semantic communication networks must go beyond: a) creating a new type of encoder and decoder at the transmitter/receiver side, and b) designing a new “AI for wireless” framework in which AI is used to extract some application features or to fine tune a wireless protocol or algorithm. Then, we identify the main tenets that are needed to build an end-to-end semantic communication network. Among those building blocks of a semantic communication networks, we highlight the necessity of creating semantic representations of data that satisfy the key properties of minimalism, generalizability, and efficiency so as to faithfully represent the data and enable the transmitter and receiver to do more with less, i.e., computationally generate content via a minimally semantic representation. We then explain how those representations can form the basis a so-called semantic language that will allow a transmitter and receiver to communicate at a semantic level. In this regard, we distinguish the concept of a semantic language from that of a natural language, and we present the pillars needed to gradually build a semantic language with fundamental structural content, yet tolerable complexity. We then show that, by using semantic representation and languages, the traditional transmitter and receiver now become a teacher and apprentice. The teacher can identify the semantic content elements in the raw datastream and learn its semantic representation. The apprentice can reason over a semantic representation, map its corresponding semantic content element, and further draw logical conclusions based on the cumulative knowledge base built. This phenomenon mimics the growth of a child’s language’s expressivity and reasoning in a more-or-less parallel fashion. We then concretely define the concept of reasoning by investigating the fundamentals of causal representation learning and their role in designing reasoning-driven semantic communication networks. We particularly demonstrate that reasoning faculties are majorly characterized by the ability to capture causal and associational relationships in datastreams. This enables radio nodes to communicate minimal, generalizable, and efficient semantic representations, and ultimately perform versatile logical conclusions– doing more with less. For such reasoning-driven networks, we revisit the fundamentals of information theory, in order to emphasize the concepts that must be redefined to capture semantic reasoning. We then propose novel and essential semantic communication key performance indicators (KPIs) and metrics that include new “reasoning capacity” measures that could go beyond Shannon’s bound to capture the imminent convergence of computing and communication resources. Finally, we explain how semantic communications can be scaled to large-scale networks such as cellular networks (6G and beyond), and deployed in emerging environments such as open radio access networks (O-RAN). In a nutshell, we expect this tutorial to provide a unified and self-contained reference on how to properly build, design, analyze, and deploy next-generation semantic communication networks.
+
+\section{Translated Abstract}
+语义通信被视为一种革命性的通信设计范式，有望彻底改变无线通信系统的设计与操作。然而，尽管近年来在这一领域的研究活动显著增加，该研究领域仍然存在三个主要局限性：第一，“语义通信系统”的定义尚不明确，不同研究对其理解存在差异；第二，缺乏基于严谨技术基础的可扩展框架来构建下一代语义通信网络；第三，尚未明确如何定义“语义表示”及其在赋予信息意义、重要性和结构方面的作用。在本教程中，我们首次提出了基于人工智能（AI）、因果推理、迁移学习和最小描述长度理论的新概念构建的端到端语义通信网络的全面愿景。我们阐明了语义通信网络的设计需要从依赖数据驱动和信息驱动的AI增强型网络向知识驱动和推理驱动的AI原生网络过渡，后者使无线网络具备逻辑推理能力。此外，我们明确区分了语义通信与其他相关方法的差异，并强调了构建下一代语义通信网络需要的关键要素，包括创建满足极简性、通用性和高效性的语义数据表示，这种表示可通过最小化的语义形式进行内容生成。我们提出了语义语言的概念，并探讨了如何在语义层面实现发送端与接收端的交流。此外，我们还引入了因果推理学习的基本原理，展示了如何通过捕捉数据流中的因果关系实现推理驱动的语义通信网络。最后，我们提出了新的关键性能指标（KPIs）和衡量标准，以支持语义推理网络，并展望了其在6G及以后的大规模网络和开放无线接入网络（O-RAN）中的应用。
+
+\section{Key Points}
+\begin{itemize}
+    \item \textbf{Topic:} The paper discusses semantic communication as a revolutionary paradigm for wireless systems. \\本文探讨了语义通信作为一种无线系统革命性范式。
+    \item \textbf{Purpose:} To create scalable, AI-driven semantic networks for efficient communication. \\旨在构建可扩展的AI驱动语义网络，以实现高效通信。
+    \item \textbf{Method:} Utilizes concepts from AI, causal reasoning, transfer learning, and minimum description length theory to establish end-to-end semantic networks. \\通过引入人工智能、因果推理、迁移学习及最小描述长度理论，构建端到端语义通信网络。
+    \item \textbf{Results:} Introduces semantic representation and reasoning-driven frameworks that reduce data while enhancing meaning, achieving efficient communication. \\引入语义表示和推理驱动框架，在减少数据量的同时提升意义，达到高效通信。
+    \item \textbf{Conclusion:} Semantic communication can enable AI-native wireless systems with logical reasoning, scalable to future networks like 6G and O-RAN. \\语义通信可实现具备逻辑推理能力的AI原生无线系统，并可扩展至未来网络如6G及开放无线接入网络。
+\end{itemize}
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
